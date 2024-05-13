@@ -3,7 +3,7 @@ TO PUSH CODE:
 git status
 git add .
 git commit -m"Aish"
-git push origin main
+git push origin master
 
 
 
