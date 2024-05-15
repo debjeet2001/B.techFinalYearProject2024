@@ -5,10 +5,14 @@ import heroImg from "../assets/images/kolkatabus01.jpg";
 import heroImg02 from "../assets/images/kolkatabus.jpg";
 import heroVideo from "../assets/images/busvideo.webm";
 import worldImg from  "../assets/images/bus.png";
+import experinceImg from "../assets/images/experience.png";
+
 import Subtitle from "./../shared/Subtitle";
 import SearchBar from "../shared/SearchBar";
 
-import ServiceList from "../services/ServiceList";
+import MasonryImagesGallery from "../components/Image-gallery/MasonryImagesGallery";
+
+import Testimonials from "../components/Testimonial/Testimonials"
 
 const Home = () => {
     return <>
@@ -59,18 +63,88 @@ const Home = () => {
     </section>
     {/* =============== hero section end  ================= */}
 
-
+    
+    {/* =============== experience section start  ================= */}
     <section>
         <Container>
             <Row>
-                <Col lg='3'>
-                    <h5 className="services_subtitle">What we serve</h5>
-                    <h2 className="services_title">We offer our best serve</h2>
+                <Col lg='6'>
+                    <div className="experience__content">
+                        <Subtitle subtitle={'Experience'}/>
+
+                        <h2>
+                            With our all experince <br/> we will serve you
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, odit!
+                        </p>
+                    </div>
+
+                    <div className="counter__wrapper d-flex align-items-center gap-5">
+                        <div className="counter__box">
+                            <span>12k+</span>
+                            <h6>Successful trip</h6>
+                        </div>
+
+                        <div className="counter__box">
+                            <span>2k+</span>
+                            <h6>Regular clients</h6>
+                        </div>
+
+                        <div className="counter__box">
+                            <span>15</span>
+                            <h6>Years experience</h6>
+                        </div>
+                    </div>
                 </Col>
-                <ServiceList/>
+
+                <Col lg="6">
+                    <div className="experience_img">
+                        <img src={experinceImg} alt="" />
+                    </div>
+
+                </Col>
             </Row>
         </Container>
     </section>
+
+    {/* =============== experience section end  ================= */}
+
+
+
+    {/* =============== gallery section start  ================= */}
+    <section>
+        <Container>
+            <Row>
+                <Col lg='12'>
+                    <Subtitle subtitle={'Gallery'}/>
+                    <h2 className="gallery__title">Visit our customers travel gallery</h2>
+                </Col>
+                <Col lg='12'>
+                    <MasonryImagesGallery/>
+                </Col>
+            </Row>
+        </Container>
+    </section>
+    {/* =============== gallery section end  ================= */}
+
+
+
+    {/* =============== testimonial section start  ================= */}
+    <section>
+        <Container>
+            <Row>
+                <Col lg="12">
+                    <Subtitle subtitle={'Fans Love'} />
+                    <h2 className="testimonial__title">What our fans say about us</h2>
+                </Col>
+                <Col lg="12">
+                    <Testimonials/>
+                </Col>
+            </Row>
+        </Container>
+    </section>
+    {/* =============== testimonial section end  ================= */}
     </>
 };
 
