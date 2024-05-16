@@ -21,22 +21,22 @@ const Home = () => {
         <Container>
             <Row>
                 <Col lg="6">
-                    <div className="hero__contemt">
+                    <div className="hero__content">
                         <div className="hero__subtitle d-flex align-items-center ">
                             <Subtitle subtitle ={"Know before you go"} />
                             <img src={worldImg} alt="" />
                         </div>
                         <h1>Skip the queues, book buses  <span className="highlight">easily</span> </h1>
                         <p>
-                        Welcome to our bus booking platform, where convenience meets efficiency. 
-                        Say goodbye to long queues and endless phone calls; with just a few clicks, 
-                        you can book your bus tickets hassle-free. 
-                        Our user-friendly interface allows you to browse through various routes, 
-                        select your preferred seats, and secure your journey within minutes. 
-                        Whether you're planning a solo trip or a group outing, 
-                        we've got you covered with a wide range of bus options to suit your needs. 
-                        Join the thousands of satisfied travelers who trust us for their transportation needs. 
-                        Book your next bus journey with us and experience seamless travel like never before.
+                            Welcome to our bus booking platform, where convenience meets efficiency. 
+                            Say goodbye to long queues and endless phone calls; with just a few clicks, 
+                            you can book your bus tickets hassle-free. 
+                            Our user-friendly interface allows you to browse through various routes, 
+                            select your preferred seats, and secure your journey within minutes. 
+                            Whether you're planning a solo trip or a group outing, 
+                            we've got you covered with a wide range of bus options to suit your needs. 
+                            Join the thousands of satisfied travelers who trust us for their transportation needs. 
+                            Book your next bus journey with us and experience seamless travel like never before.
                         </p>
                     </div>
                 </Col>
@@ -76,13 +76,13 @@ const Home = () => {
                             With our all experince <br/> we will serve you
                         </h2>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, odit!
+                            Adventure awaits just around the corner!
                         </p>
                     </div>
 
                     <div className="counter__wrapper d-flex align-items-center gap-5">
                         <div className="counter__box">
-                            <span>12k+</span>
+                            <span>8k+</span>
                             <h6>Successful trip</h6>
                         </div>
 
@@ -92,7 +92,7 @@ const Home = () => {
                         </div>
 
                         <div className="counter__box">
-                            <span>15</span>
+                            <span>5</span>
                             <h6>Years experience</h6>
                         </div>
                     </div>
