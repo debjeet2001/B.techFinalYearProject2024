@@ -1,11 +1,11 @@
-import React from "react";
+import React, {useRef, useEffect} from "react";
 import {Container, Row,  Button} from  "reactstrap"; 
 import {NavLink, Link} from "react-router-dom";
 
 import logo from  "../../assets/images/logo1.png";
 import "./header.css";
 
-const nav_links=[
+const nav__links=[
     {
          path: "/home",
          display: "Home"
@@ -21,7 +21,29 @@ const nav_links=[
 ]
 
 const Header = () => {
-    return <header className="header">
+
+const headerRef = useRef(null)
+
+const stickyHeaderFunc = () =>{
+    window.addEventListener('scroll', ()=>{
+        if(document.body.scrollTop >80 || document.documentElement.scrollTop >80){
+            headerRef.current.classList.add('stick_header')
+        }
+        else{
+            headerRef.current.classList.remove('sticky__header')
+        }
+    })
+}
+
+
+useEffect(()=>{
+    stickyHeaderFunc()
+
+    return window.removeEventListener('scroll', stickyHeaderFunc)
+})
+
+    return (
+    <header className="header" ref={headerRef}>
         <Container>
             <Row>
                 <div className="nav__wrapper d-flex align-items-center 
@@ -37,7 +59,7 @@ const Header = () => {
                     <div className="navigation">
                         <ul className="menu d-flex align-items-center gap-5 ">
                             {
-                                nav_links.map((item, index)=>(
+                                nav__links.map((item, index)=>(
                                     <li className="nav__item" key={index}>
                                         <NavLink to={item.path} className={navClass=> navClass.isActive ? "active__link": ""
                                     }>
@@ -67,6 +89,7 @@ const Header = () => {
             </Row>
         </Container>
     </header>
+    )
 };
 
 export default Header;
