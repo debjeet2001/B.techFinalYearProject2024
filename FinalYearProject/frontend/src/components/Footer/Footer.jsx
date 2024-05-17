@@ -65,7 +65,7 @@ const Footer = () => {
                     <Col lg='3'>
                         <h5 className="footer__link-title">Discover</h5>
 
-                        <listGroup className="footer__quick-links">
+                        <listGroup className="footer__quick-links custom-gap">
                             {quick__links.map((item,index)=>(
                                     <ListGroupItem key={index} className="ps-0 border-0">
                                         <Link to={item.path}>{item.display}</Link>
@@ -78,7 +78,7 @@ const Footer = () => {
                     <Col lg="3">
                         <h5 className="footer__link-title">Quick Links</h5>
 
-                        <listGroup className="footer__quick-links">
+                        <listGroup className="footer__quick-links custom-gap">
                             {
                                 quick__links2.map((item,index)=>(
                                     <ListGroupItem key={index} className='ps-0 border-0'>
@@ -92,7 +92,7 @@ const Footer = () => {
                     <Col lg="3">
                     <h5 className="footer__link-title">Contact</h5>
 
-                    <listGroup className="footer__quick-links">
+                    <listGroup className="footer__quick-links custom-gap">
                         <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-3'>
                             <h6 className="mb-0 d-flex align-items-center gap-2">
                                 <span><i class="ri-map-pin-line"></i></span>

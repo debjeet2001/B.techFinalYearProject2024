@@ -25,7 +25,7 @@ const SearchBar = () =>{
     return (
         <Col lg="12">
             <div className="search__bar">
-                 <Form className="d-flex align-items-center gap-4 ">
+                 <Form className="d-flex align-items-center gap-4 cust-form ">
                     <FormGroup className="d-flex gap-3 form__group form__group-fast">
                          <span>
                          <i class="ri-map-pin-line"></i>
