@@ -16,14 +16,15 @@ const SearchBar = () =>{
         const date = dateRef.current.value
         const bus = busRef.current.value
 
-        if(from=="" || to == "" || date == "" || bus == ""){
+        if(from==="" || to === "" || date === "" || bus === ""){
             return alert( "All fields are required!")
         }
     }
 
 
     return (
-        <Col lg="12">
+        // <div className="entire__search__bar">
+        <Col lg="12"> 
             <div className="search__bar">
                  <Form className="d-flex align-items-center gap-4 cust-form ">
                     <FormGroup className="d-flex gap-3 form__group form__group-fast">
@@ -73,6 +74,7 @@ const SearchBar = () =>{
                  </Form>
             </div>
         </Col>
+        // </div>
     )
     
 };
